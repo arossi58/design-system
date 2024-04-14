@@ -9,10 +9,64 @@
   <body>
     <main>
       
+      
       <div class="page-container">
-        <h1>Design System</h1>
-        <img src="images/product-grid.png" alt="screenshot from cirrus aircraft" class="reference-image">
-        <h1>Code:</h1>
+        <header>
+          <h2>Cirrus Aircraft</h2>
+          <h3>Web Design Study</h3>
+
+          <div class="base-style">
+            <h4>Typography:<br> IBM Plex Sans</h4>
+            <h4>Color</h4>
+            <div class="swatch">
+              <p>
+                White: #FFFFFF
+              </p>
+            </div>
+            <div class="swatch bg-gray">
+              <p class="p-light">
+                Dark Gray: #1A1A1C
+              </p>
+            </div>
+            <div class="swatch bg-blue">
+              <p class="p-light">
+                Blue: #2B77C7
+              </p>
+            </div>
+          </div>
+        </header>
+
+
+<div class="component-section bg-gray">
+
+  <div class="component-title">
+    <h4>Page Header</h4>
+  </div>
+  <img src="images/page-header.png" alt="cirrus aircraft nav bar">
+
+  <nav class="page-header">
+    <img src="images/logo.svg" alt="cirrus aircraft logo">
+    <ul class="page-header__navigation">
+      <li><a href="">Aircraft <img src="" alt="drop down arrow"></a></li>
+      <li><a href="">Flight Training</a> </li>
+      <li><a href="">Service and Support</a></li>
+      <li><a href="#">Store</a></li>
+    </ul>
+
+    <ul class="page-header__secondary-navigation">
+      <li><a href="#">Configurator</a></li>
+      <li> <a href="#">Find Us</a> </li>
+      <li><a href="#"><img src="#" alt="profile icon">Sign In</a></li>
+    </ul>
+  </nav>
+
+</div>
+
+
+<div class="component-section">
+
+  <img src="images/product-grid.png" alt="screenshot from cirrus aircraft" class="reference-image">
+        
         <article class="product-grid">
           <img src="images/aircraft-hero-g2-vision-jet.png.webp" alt="cirrus vision jet" class="product-grid__image">
           <a href="#" class="product-grid__link">
@@ -27,6 +81,9 @@
           </div>
         </article>
       </div>
+
+</div>
+      
     </main>
   </body>
 </html>

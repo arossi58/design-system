@@ -2,17 +2,29 @@
   box-sizing: border-box;
 }
 
-@import url("https://use.typekit.net/ytd2hvi.css");
+:root{
+--white: #FFF;
+--dark-gray: #1a1a1c;
+--blue: #2b77c7;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap');
 
 body {
-  font-family: "aktiv-grotesk", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   font-weight: 300;
   font-style: normal;
+  line-height: 1.5;
+  margin: 0;
 }
 
 h1, h2, h3 {
   margin: 0;
   padding: 0;
+}
+
+h1{
+font-size: 12rem;
 }
 
 h2{
@@ -31,18 +43,77 @@ p{
   line-height: 1.6;
 }
 
+.p-light{
+  color: var(--white);
+}
+
 a{
   text-decoration: none;
   color: black;
 }
 
-.reference-image{
-  width: 100%;
+.bg-white{
+  background-color: var(--white);
+}
+
+.bg-gray{
+  background-color: var(--dark-gray);
+}
+
+.bg-blue{
+  background-color: var(--blue);
 }
 
 
+.component-section{
+  padding: 2rem;
+}
+
+
+/*--------------------------------- DS Header ---------------------------------*/
+
+header{
+  margin:2rem 0;
+  padding: 1rem 0;
+  border-bottom: 2px solid var(--dark-gray);
+}
+
+header h2{
+  margin-bottom: 1rem;
+  font-weight: 200;
+}
+
+.swatch{
+  height: 200px;
+  width: 200px;
+  padding: 1rem;
+  display: flex;
+  align-items: end;
+}
+
+.base-style{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+/*--------------------------------- Page Header ---------------------------------*/
+
+.page-header{
+  width: 100%;
+  padding: .5rem 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+/*--------------------------------- Product Grid ---------------------------------*/
+
+
+
 .page-container{
-  max-width: 50%;
   margin: 0 auto;
 }
 
@@ -52,6 +123,7 @@ a{
   flex-direction: column;
   justify-content: flex-end;
   padding: 15rem 3rem 4rem 3rem;
+  max-width: 50%;
 }
 
 .product-grid__image{
