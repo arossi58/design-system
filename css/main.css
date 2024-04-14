@@ -47,10 +47,17 @@ p{
   color: var(--white);
 }
 
+ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 a{
   text-decoration: none;
   color: black;
 }
+
 
 .bg-white{
   background-color: var(--white);
@@ -67,6 +74,9 @@ a{
 
 .component-section{
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 
@@ -102,16 +112,46 @@ header h2{
 
 .page-header{
   width: 100%;
-  padding: .5rem 1rem;
+  padding: 1rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
+.page-header__logo img{
+  width: 100px;
+}
+
+.page-header__navigation{
+  display: flex;
+  gap: 1rem;
+  text-transform: uppercase;
+  font-size: .8rem;
+}
+
+.secondary{
+  font-size: .7rem;
+}
+
+.navigation__link{
+  color: var(--white);
+}
+
+.with-img{
+  display: flex;
+  align-items: center;
+}
+
+.nav-img{
+  width: 14px;
+  margin-right: 4px;
+}
+
+
+/*--------------------------------- Hero Section ---------------------------------*/
+
 
 /*--------------------------------- Product Grid ---------------------------------*/
-
-
 
 .page-container{
   margin: 0 auto;
