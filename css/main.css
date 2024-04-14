@@ -24,7 +24,7 @@ h1, h2, h3 {
 }
 
 h1{
-font-size: 12rem;
+font-size: 6rem;
 }
 
 h2{
@@ -149,6 +149,52 @@ header h2{
 
 
 /*--------------------------------- Hero Section ---------------------------------*/
+
+.hero-section{
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+}
+
+.hero-section__video{
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 1;
+}
+
+.hero-section__content{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-section__title{
+  font-weight: 100;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.hero-section__button{
+  position: relative;
+  z-index: 10;
+  margin: 0 auto;
+  padding: .5rem;
+  border: 1px solid var(--white);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+
 
 
 /*--------------------------------- Product Grid ---------------------------------*/
