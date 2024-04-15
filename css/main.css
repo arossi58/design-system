@@ -1,3 +1,6 @@
+/*--------------------------------- Global ---------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -6,17 +9,49 @@
 --white: #FFF;
 --dark-gray: #1a1a1c;
 --blue: #2b77c7;
+--black: #000;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
 
 body {
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-style: normal;
   line-height: 1.5;
   margin: 0;
 }
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.button{
+  padding: .5rem 4rem;
+  border: 2px solid var(--white);
+  color: var(--white);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  border-radius: 2rem;
+  transition: all 200ms ease-in;
+}
+
+.button:hover{
+  background-color: var(--white);
+  color: var(--dark-gray);
+}
+
+
+
+/*--------------------------------- Type ---------------------------------*/
 
 h1, h2, h3 {
   margin: 0;
@@ -29,7 +64,7 @@ font-size: 6rem;
 
 h2{
   font-weight: 300;
-  font-size: 2.5rem;
+  font-size: 4rem;
 }
 
 h3{
@@ -47,17 +82,13 @@ p{
   color: var(--white);
 }
 
-ul{
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+.p-larger{
+  font-size: 1rem;
+  font-weight: 400;
 }
 
-a{
-  text-decoration: none;
-  color: black;
-}
 
+/*--------------------------------- Utility ---------------------------------*/
 
 .bg-white{
   background-color: var(--white);
@@ -71,7 +102,6 @@ a{
   background-color: var(--blue);
 }
 
-
 .component-section{
   padding: 2rem;
   display: flex;
@@ -79,6 +109,21 @@ a{
   gap: 2rem;
 }
 
+.relative-top{
+  position: relative;
+  z-index: 10;
+}
+
+.image-bg{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.opacity{
+  opacity: .5;
+}
 
 /*--------------------------------- DS Header ---------------------------------*/
 
@@ -155,6 +200,7 @@ header h2{
   height: 100vh;
   text-align: center;
   position: relative;
+  overflow: hidden;
 }
 
 .hero-section__video{
@@ -168,9 +214,7 @@ header h2{
 
 .hero-section__content{
   width: 100%;
-  height: 100%;
-  position: relative;
-  z-index: 10;
+  height: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -178,17 +222,15 @@ header h2{
 }
 
 .hero-section__title{
-  font-weight: 100;
+  font-weight: 200;
   color: var(--white);
   text-transform: uppercase;
 }
 
 .hero-section__button{
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 10;
   margin: 0 auto;
   padding: .5rem;
   border: 1px solid var(--white);
@@ -208,6 +250,39 @@ header h2{
  width: 20px;
 }
 
+/*--------------------------------- Feature Banner ---------------------------------*/
+
+.feature-banner{
+  width: 100%;
+  padding: 20rem 0;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--black);
+}
+
+.feature-banner__content{
+  max-width: 80%;
+  margin-right: 0;
+  margin-left: auto;
+  position: relative;
+}
+
+.feature-banner__content p{
+  max-width: 30%;
+  margin-bottom: 6rem;
+}
+
+.feature-banner__title{
+  border-bottom: 1px solid var(--white);
+}
+
+.feature-banner__icon{
+  width: 175px;
+  position: absolute;
+  left: 5%;
+  bottom: 5%;
+  z-index: 10;
+}
 
 /*--------------------------------- Product Grid ---------------------------------*/
 
@@ -215,7 +290,7 @@ header h2{
   margin: 0 auto;
 }
 
-.product-grid{
+.product-grid__item{
   box-shadow: inset 10px 10px 150px -50px rgba(0,0,0,.1);
   display: flex;
   flex-direction: column;
@@ -250,3 +325,5 @@ header h2{
 .description__title{
   letter-spacing: 2px;
 }
+
+
