@@ -364,8 +364,11 @@ header h2{
 }
 
 .grid-line{
+  position: absolute;
   height: 2px;
+  width: 90%;
   background-color: var(--white);
-  margin-top: 50%;
-  margin-left: 10%;
+  bottom: 20%;
+  right: 0;
+  z-index: 10;
 }
