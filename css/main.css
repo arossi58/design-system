@@ -33,6 +33,10 @@ a{
   color: black;
 }
 
+hr {
+width: 100%;
+}
+
 .button{
   padding: .5rem 4rem;
   border: 2px solid var(--white);
@@ -409,4 +413,41 @@ header h2{
   bottom: 20%;
   right: 0;
   z-index: 10;
+}
+
+/*--------------------------------- Info Grid ---------------------------------*/
+.info-grid{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+.info-grid__item{
+  min-height: 66vh;
+  padding: 15rem 0 15rem 7.5rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  min-width: 600px;
+  justify-content: flex-end;
+  background-color: var(--dark-gray);
+  color: var(--white);
+}
+
+.info-grid__img{
+  width: 45%;
+  margin: 0 auto;
+  margin-bottom: 10rem;
+}
+
+.info-grid__item p {
+  max-width: 50%;
+}
+
+.bg-img{
+  background-image: url("../images/2021-learntofly-hero-1-scaled.webp");
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover;
 }
