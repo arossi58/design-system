@@ -311,6 +311,8 @@ header h2{
   justify-content: flex-end;
   padding: 15rem 3rem 4rem 3rem;
   max-width: 50%;
+  position: relative;
+  overflow: hidden;
 }
 
 .product-grid__image{
@@ -318,12 +320,31 @@ header h2{
   margin: 0 auto;
 }
 
-.product-grid__link{
+.product-grid__video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-30%);
+  min-width: 80%;
+  min-height: 100%;
+  z-index: 1;
+  display: none;
+  opacity: 0;
+  transition: 1s ease-out;
+}
+
+.product-grid__content{
+  position: relative;
+  z-index: 10;
+}
+
+.product-grid__header{
   width: 100%;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid black;
   padding: .5rem 0;
+  
 }
 
 .link__icon{
@@ -339,6 +360,21 @@ header h2{
 .description__title{
   letter-spacing: 2px;
 }
+
+/*-------Prodcut Grid Hover-----*/
+.product-grid__item:hover .product-grid__video{
+display: block;
+opacity: 1;
+}
+
+.product-grid__item:hover .product-grid__content{
+  color: var(--white);
+  }
+
+.product-grid__item:hover .product-grid__content{
+    color: var(--white);
+    }
+
 
 /*--------------------------------- Feature Grid ---------------------------------*/
 
