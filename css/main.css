@@ -35,6 +35,7 @@ a{
 
 hr {
 width: 100%;
+color: var(--dark-gray);
 }
 
 .button{
@@ -54,6 +55,15 @@ width: 100%;
   color: var(--dark-gray);
 }
 
+.dark{
+  border: 2px solid var(--dark-gray);
+  color: var(--dark-gray);
+}
+
+.dark:hover{
+  background-color: var(--dark-gray);
+  color: var(--white);
+}
 
 
 /*--------------------------------- Type ---------------------------------*/
@@ -73,9 +83,9 @@ h2{
 }
 
 h3{
-  font-weight: 700;
+  font-weight: 200;
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 2rem;
 }
 
 p{
@@ -362,6 +372,9 @@ header h2{
 
 .description__title{
   letter-spacing: 2px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1rem;
 }
 
 /*-------Prodcut Grid Hover-----*/
@@ -460,28 +473,32 @@ header h2{
   flex-direction: column;
   align-items: center;
   gap: 5rem;
+  padding: 6rem;
 }
 
 .story__header{
   text-align: center;
-  padding-top: 6rem;
   max-width: 40%;
 }
 
 .story__grid{
   display: flex;
   flex-direction: row;
-  width: 70%;
+  width: 100%;
   height: 600px;
+  max-width: 1500px;
 }
 
 .story-grid__item {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-end;
   height: 50%;
   background-color: aqua;
   aspect-ratio: 1/1;
+  padding: 3rem;
+  color: var(--white);
+  position: relative;
 }
 
 
@@ -495,11 +512,30 @@ header h2{
   height: 100%;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+}
+
+.story-item__content{
+  position: relative;
+  z-index: 10;
+  transition: all .1s ease-out;
+  overflow: hidden;
+  padding-top: 10px;
+  height: 105px;
+}
+
+.story-gradient{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  opacity: 0;
+  transition: opactiy .3s ease-out;
 }
 
 #story1{
-  background-color: red;
+  background-image: url("../images/kincer-chassis-bronco-rockwood-sr-08-1200x800-9b9f185.png.webp");
 }
 
 #story2{
@@ -516,4 +552,12 @@ header h2{
 
 #story5{
   background-color: green;
+}
+
+.story-grid__item:hover .story-gradient{
+opacity: 1;
+}
+
+.story-grid__item:hover .story-item__content{
+  padding-top: 0px;
 }
