@@ -68,11 +68,28 @@ z-index: 10;
 }
 
 
+.badge{
+  padding: .2rem 1rem;
+  font-size: 14px;
+  border: 2px solid var(--white);
+  color: var(--white);
+  text-transform: uppercase;
+  font-weight: 400;
+  border-radius: 2rem;
+  display: inline-block;
+  transition: all 200ms ease-in;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  transition: all .3s ease-out;
+}
+
 /*--------------------------------- Type ---------------------------------*/
 
 h1, h2, h3, h4 {
   margin: 0;
   padding: 0;
+  font-weight: 200;
 }
 
 h1{
@@ -81,7 +98,7 @@ font-size: 6rem;
 
 h2{
   font-weight: 300;
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 
 h3{
@@ -154,6 +171,10 @@ p{
 
 .opacity{
   opacity: .5;
+}
+
+.all-caps{
+  text-transform: capitalize;
 }
 
 /*--------------------------------- DS Header ---------------------------------*/
@@ -463,8 +484,12 @@ header h2{
   max-width: 50%;
 }
 
-.bg-img{
+.--full-bg{
   background-image: url("../images/2021-learntofly-hero-1-scaled.webp");
+}
+
+.bg-img{
+  
   background-position: center; 
   background-repeat: no-repeat;
   background-size: cover;
@@ -504,6 +529,9 @@ header h2{
   padding: 3rem;
   color: var(--white);
   position: relative;
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .large{
@@ -526,6 +554,15 @@ header h2{
   height: 105px;
 }
 
+.story-item__content-small{
+  position: relative;
+  z-index: 10;
+  transition: all .1s ease-out;
+  overflow: hidden;
+  padding-top: 20px;
+  height: 20px;
+}
+
 .story-gradient{
   position: absolute;
   bottom: 0;
@@ -542,15 +579,15 @@ header h2{
 }
 
 #story2{
-  background-color: #2b77c7;
+  background-image: url("../images/cirrus-flying-fields.jpg");
 }
 
 #story3{
-  background-color: pink;
+  background-image: url("../images/cirrus-flying-nyc.jpg");
 }
 
 #story4{
-  background-color: aqua;
+  background-image: url("../images/cirrus-on-ramp.jpg");
 }
 
 #story5{
@@ -563,4 +600,87 @@ opacity: 1;
 
 .story-grid__item:hover .story-item__content{
   padding-top: 0px;
+}
+
+.story-grid__item:hover .story-item__content-small{
+  padding-top: 0px;
+}
+
+.story-grid__item:hover .badge{
+  background-color: var(--white);
+  color: var(--dark-gray);
+}
+
+
+/*--------------------------------- Carousel ---------------------------------*/
+
+.carousel{
+  padding: 6rem;
+  text-align: center;
+}
+
+.carousel-img__container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding-top:4rem;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.img-container__img{
+  padding: 1rem;
+  height: 20rem;
+  width: 40%;
+  height: 30rem;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  position: relative;
+}
+
+.carousel-gradient{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 80%);
+  z-index: 1;
+}
+
+.img-container__img h3{
+font-size: 1.4rem;
+font-weight: 500;
+}
+
+.img-container__content{
+  position: relative;
+  z-index: 10;
+  height: 100px;
+  padding-top: 30px;
+  overflow: hidden;
+  transition: padding .3s ease-out;
+}
+
+#carousel-1{
+  background-image: url("../images/carousel-img-1.webp");
+}
+
+#carousel-2{
+  background-image: url("../images/carousel-img-2.webp");
+}
+
+#carousel-3{
+  background-image: url("../images/carousel-img-3.webp");
+}
+
+#carousel-4{
+  background-image: url("../images/carousel-img-4.webp");
+}
+
+.img-container__img:hover .img-container__content{
+  padding-top: 0;
 }
