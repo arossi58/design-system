@@ -560,7 +560,7 @@ header h2{
   transition: all .1s ease-out;
   overflow: hidden;
   padding-top: 20px;
-  height: 20px;
+  height: 25px;
 }
 
 .story-gradient{
@@ -591,7 +591,7 @@ header h2{
 }
 
 #story5{
-  background-color: green;
+  background-image: url("../images/hero.jpg.webp");
 }
 
 .story-grid__item:hover .story-gradient{
