@@ -194,6 +194,18 @@ p{
   margin: auto 0;
 }
 
+.ds-nav__list{
+margin-top: 1rem;
+}
+
+.ds-nav__list li{
+  padding: .5rem 0;
+  }
+
+.ds-nav__list a{
+  color: var(--blue);
+  font-weight: 500;
+  }
 
 main{
   margin-left: 200px;
