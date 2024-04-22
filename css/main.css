@@ -475,6 +475,28 @@ header h2{
   z-index: 10;
 }
 
+/*--------------------------------- Services Grid ---------------------------------*/
+.services-grid{
+  background-color: var(--dark-gray);
+  padding: 7.5rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.services-grid__text{
+  width: 50%;
+}
+
+.services-grid__text p{
+  max-width: 80%;
+  margin-bottom: 1rem;
+}
+
+.services__img{
+width: 50%;
+}
+
+
 /*--------------------------------- Info Grid ---------------------------------*/
 .info-grid{
   display: flex;
