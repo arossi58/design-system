@@ -209,6 +209,7 @@ header{
 header h2{
   margin-bottom: 1rem;
   font-weight: 200;
+  text-decoration: underline;
 }
 
 .swatch{
@@ -225,6 +226,15 @@ header h2{
   justify-content: space-between;
 }
 
+.swatches{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.swatches h4{
+  width: 100%;
+}
 
 /*--------------------------------- Page Header ---------------------------------*/
 
