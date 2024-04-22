@@ -20,6 +20,7 @@ body {
   font-style: normal;
   line-height: 1.5;
   margin: 0;
+  padding: 0;
 }
 
 ul{
@@ -83,6 +84,7 @@ z-index: 10;
   left: 1rem;
   transition: all .3s ease-out;
 }
+
 
 /*--------------------------------- Type ---------------------------------*/
 
@@ -177,10 +179,29 @@ p{
   text-transform: capitalize;
 }
 
+/*--------------------------------- DS Navigation ---------------------------------*/
+.ds-navigation{
+  background-color: var(--dark-gray);
+  height: 100vh;
+  width:200px;
+  position: fixed;
+  border-right: 2px solid var(--blue);
+  padding: 1rem;
+}
+
+.ds-navigation img{
+  width: 80%;
+  margin: auto 0;
+}
+
+
+main{
+  margin-left: 200px;
+}
+
 /*--------------------------------- DS Header ---------------------------------*/
 
 header{
-  margin:2rem 0;
   padding: 1rem 0;
   border-bottom: 2px solid var(--dark-gray);
 }
@@ -680,6 +701,10 @@ font-weight: 500;
 
 #carousel-4{
   background-image: url("../images/carousel-img-4.webp");
+}
+
+.img-container__img:hover{
+  cursor: pointer;
 }
 
 .img-container__img:hover .img-container__content{
