@@ -484,9 +484,10 @@ header h2{
   max-width: 50%;
 }
 
-.--full-bg{
+.--with-bg{
   background-image: url("../images/2021-learntofly-hero-1-scaled.webp");
 }
+  
 
 .bg-img{
   
@@ -683,4 +684,85 @@ font-weight: 500;
 
 .img-container__img:hover .img-container__content{
   padding-top: 0;
+}
+
+/*--------------------------------- Footer ---------------------------------*/
+
+.footer{
+  border-top: 2px solid var(--white);
+  background-color: var(--dark-gray);
+  padding: 6rem 6rem 13rem 6rem;
+}
+
+.footer-wrapper{
+  max-width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.footer__contact{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contact__form{
+  max-width: 400px;
+}
+
+.contact__form form{
+  margin-bottom: 1rem;
+}
+
+.text-entry{
+  color: #fff;
+  background-color: #1a1a1c;
+  border: 1px solid transparent;
+  border-bottom-color: #d8d8d8;
+  font-size: 15px;
+  margin-right: 1rem;
+}
+
+.btn-submit{
+  color: var(--white);
+  background-color: var(--blue);
+  padding: .5rem 1rem;
+  border: 1px solid var(--blue);
+  display: inline-block;
+  border-radius: 20px;
+  transition: all .3s ease-out;
+}
+
+.btn-submit:hover{
+  color: var(--blue);
+  background-color: var(--white);
+  cursor: pointer;
+}
+
+.footer__social a{
+margin-right: .5rem;
+}
+
+.footer__nav{
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.footer-nav__column{
+  flex: auto;
+}
+
+.footer-nav__item{
+padding: .5rem 0;
+border-bottom: 1px solid #d8d8d8;
+}
+
+.footer-nav__item a{
+  color: var(--white);
+  text-transform: capitalize;
 }
