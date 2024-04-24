@@ -109,9 +109,10 @@ h3{
 }
 
 p{
-  font-size: .8rem;
+  font-size: 1rem;
   line-height: 1.6;
   margin: 0;
+  font-weight: 400;
 }
 
 .p-light{
@@ -160,7 +161,7 @@ p{
   z-index: 10;
 }
 
-.image-bg{
+.image-bg-absolute{
   position: absolute;
   top: 0;
   left: 0;
@@ -176,6 +177,12 @@ p{
 
 .all-caps{
   text-transform: capitalize;
+}
+
+.bg-img{
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /*--------------------------------- DS Navigation ---------------------------------*/
@@ -384,6 +391,7 @@ header h2{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  min-height: 100vh;
 }
 
 .page-container{
@@ -509,10 +517,13 @@ header h2{
   display: flex;
   flex-direction: row;
   align-items: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .services-grid__text{
   width: 50%;
+  z-index: 10;
 }
 
 .services-grid__text p{
@@ -522,6 +533,7 @@ header h2{
 
 .services__img{
 width: 50%;
+padding-right: 6rem;
 }
 
 
@@ -530,6 +542,7 @@ width: 50%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 
@@ -538,15 +551,15 @@ width: 50%;
   padding: 15rem 0 15rem 7.5rem;
   display: flex;
   flex-direction: column;
-  max-width: 50%;
   min-width: 600px;
+  width: 50%;
   justify-content: flex-end;
   background-color: var(--dark-gray);
   color: var(--white);
 }
 
 .info-grid__img{
-  width: 45%;
+  width: 50%;
   margin: 0 auto;
   margin-bottom: 10rem;
 }
@@ -555,16 +568,14 @@ width: 50%;
   max-width: 50%;
 }
 
-.with-bg{
-  background-image: url("../images/2021-learntofly-hero-1-scaled.webp");
-}
-  
 
-.bg-img{
-  
+
+.info-with-bg{
+  background-image: url("../images/2021-learntofly-hero-1-scaled.webp");
   background-position: center; 
   background-repeat: no-repeat;
   background-size: cover;
+  padding-right: 0;
 }
 
 /*--------------------------------- Story Grid ---------------------------------*/
@@ -870,11 +881,11 @@ border-bottom: 1px solid #d8d8d8;
   z-index: 10;
 }
 
-.full-width{
-
+.services-full-width{
+min-height: 80vh;
+padding-left: 15rem;
 }
 
-.adventure{
-  background-image: url("../images/alaska-banff-cold-2356064-copy-scaled.jpg");
-  background-color: var(--black);
+.full-width{
+  width: 100vw;
 }
