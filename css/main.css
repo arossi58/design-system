@@ -273,19 +273,19 @@ header h2{
   gap: 1rem;
   text-transform: uppercase;
   font-size: .8rem;
-}
-
-.secondary{
-  font-size: .7rem;
+  align-items: center;
 }
 
 .navigation__link{
   color: var(--white);
+  font-size: 1.1rem;
+  font-weight: 400;
 }
 
-.with-img{
+.nav-small{
   display: flex;
   align-items: center;
+  font-size: .8rem;
 }
 
 .nav-img{
