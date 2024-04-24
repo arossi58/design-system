@@ -383,6 +383,7 @@ header h2{
 .product-grid{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .page-container{
@@ -688,6 +689,7 @@ opacity: 1;
 .carousel{
   padding: 6rem;
   text-align: center;
+  background-color: var(--dark-gray);
 }
 
 .carousel-img__container{
@@ -866,4 +868,13 @@ border-bottom: 1px solid #d8d8d8;
 .homepage__header{
   position: absolute;
   z-index: 10;
+}
+
+.full-width{
+
+}
+
+.adventure{
+  background-image: url("../images/alaska-banff-cold-2356064-copy-scaled.jpg");
+  background-color: var(--black);
 }
