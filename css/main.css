@@ -380,6 +380,11 @@ header h2{
 
 /*--------------------------------- Product Grid ---------------------------------*/
 
+.product-grid{
+  display: flex;
+  flex-direction: row;
+}
+
 .page-container{
   margin: 0 auto;
 }
@@ -390,7 +395,7 @@ header h2{
   flex-direction: column;
   justify-content: flex-end;
   padding: 15rem 3rem 4rem 3rem;
-  max-width: 50%;
+  width: 50%;
   position: relative;
   overflow: hidden;
 }
@@ -853,4 +858,12 @@ border-bottom: 1px solid #d8d8d8;
   font-size: 12px;
   margin-right: .5rem;
   font-weight: 500;
+}
+
+
+/*--------------------------------- Homepage Styles ---------------------------------*/
+
+.homepage__header{
+  position: absolute;
+  z-index: 10;
 }
