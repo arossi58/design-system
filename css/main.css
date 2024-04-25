@@ -213,18 +213,18 @@ margin-top: 1rem;
   font-weight: 500;
   }
 
-main{
+.ds-main{
   margin-left: 200px;
 }
 
 /*--------------------------------- DS Header ---------------------------------*/
 
-header{
+.ds-header{
   padding: 1rem 0;
   border-bottom: 2px solid var(--dark-gray);
 }
 
-header h2{
+.ds-header h2{
   margin-bottom: 1rem;
   font-weight: 200;
   text-decoration: underline;
