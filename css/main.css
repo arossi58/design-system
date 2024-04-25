@@ -499,15 +499,6 @@ header h2{
   overflow: hidden;
 }
 
-.grid-line{
-  position: absolute;
-  height: 2px;
-  width: 90%;
-  background-color: var(--white);
-  bottom: 20%;
-  right: 0;
-  z-index: 10;
-}
 
 .feature-line{
   position: absolute;
@@ -548,6 +539,7 @@ padding-right: 6rem;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
+  overflow: hidden;
 }
 
 
