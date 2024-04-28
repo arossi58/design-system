@@ -597,14 +597,11 @@ padding-right: 6rem;
 
 .story__grid{
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 80%;
+  flex-direction: row;;
   height: 600px;
-  margin-bottom: 0 auto;
 }
 
-.story-grid__item {
+.story-grid__item{
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -654,7 +651,6 @@ padding-right: 6rem;
 
 #story1{
   background-image: url("../images/kincer-chassis-bronco-rockwood-sr-08-1200x800-9b9f185.png.webp");
-  width: 55%;
 }
 
 #story2{
