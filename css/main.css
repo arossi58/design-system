@@ -94,12 +94,12 @@ h1, h2, h3, h4 {
 }
 
 h1{
-font-size: 6rem;
+font-size: 7rem;
 }
 
 h2{
   font-weight: 300;
-  font-size: 3.5rem;
+  font-size: 4rem;
 }
 
 h3{
@@ -183,6 +183,10 @@ p{
   background-position: center; 
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.margin-top{
+  margin-top: 6rem;
 }
 
 /*--------------------------------- DS Navigation ---------------------------------*/
@@ -583,7 +587,7 @@ padding-right: 6rem;
   flex-direction: column;
   align-items: center;
   gap: 5rem;
-  padding: 6rem;
+  padding: 6rem 0rem;
 }
 
 .story__header{
@@ -595,9 +599,9 @@ padding-right: 6rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 100%;
+  width: 80%;
   height: 600px;
-  max-width: 1500px;
+  margin-bottom: 0 auto;
 }
 
 .story-grid__item {
@@ -650,7 +654,7 @@ padding-right: 6rem;
 
 #story1{
   background-image: url("../images/kincer-chassis-bronco-rockwood-sr-08-1200x800-9b9f185.png.webp");
-  flex: 1;
+  width: 55%;
 }
 
 #story2{
