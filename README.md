@@ -13,4 +13,4 @@ This is a project for the Web Development course at the Minneapolis College of A
 ## Author
 
 Project Code: [Andrew Rossi](https://www.arossi.design/)
-Source Design: [Wolff Olins](https://cirrusaircraft.com/)
+Source Design: [Cirrus Aircraft](https://cirrusaircraft.com/)
